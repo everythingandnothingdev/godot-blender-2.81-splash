@@ -1,0 +1,38 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+path="res://.godot/imported/gears.glb-5ead87f9c8b41490a7b806f1669067c0.scn"
+
+[deps]
+
+source_file="res://assets/source_scene/background/gears.glb"
+dest_files=["res://.godot/imported/gears.glb-5ead87f9c8b41490a7b806f1669067c0.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=3
+meshes/lightmap_texel_size=0.1
+skins/use_named_skins=true
+animation/import=true
+animation/fps=15
+import_script/path=""
+_subresources={
+"meshes": {
+"Extended_Gears": {
+"generate/lightmap_uv": 1
+}
+},
+"nodes": {
+"PATH:Gears2": {
+"import/skip_import": true
+}
+}
+}

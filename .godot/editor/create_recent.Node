@@ -1,0 +1,11 @@
+VoxelGI
+SpotLight3D
+MeshInstance3D
+LightmapGI
+ReflectionProbe
+LightmapProbe
+OmniLight3D
+DirectionalLight3D
+Node3D
+WorldEnvironment
+Camera3D

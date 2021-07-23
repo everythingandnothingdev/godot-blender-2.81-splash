@@ -1,0 +1,38 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+path="res://.godot/imported/background_cube.glb-59a3b8a9b6eb2612146600271660e872.scn"
+
+[deps]
+
+source_file="res://assets/source_scene/background/background_cube.glb"
+dest_files=["res://.godot/imported/background_cube.glb-59a3b8a9b6eb2612146600271660e872.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=3
+meshes/lightmap_texel_size=0.1
+skins/use_named_skins=true
+animation/import=true
+animation/fps=15
+import_script/path=""
+_subresources={
+"meshes": {
+"Extended_Background Cube": {
+"generate/lightmap_uv": 1
+}
+},
+"nodes": {
+"PATH:Background Cube2": {
+"import/skip_import": true
+}
+}
+}

@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Blender 2.81 Splash Godot"
+run/main_scene="res://default.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/height=960
+window/size/fullscreen=true
+window/size/test_width=1920
+window/size/test_height=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
+[rendering]
+
+anti_aliasing/quality/msaa=3
+environment/defaults/default_environment="res://default_env.tres"

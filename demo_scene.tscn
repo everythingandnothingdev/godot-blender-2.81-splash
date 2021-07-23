@@ -1,0 +1,336 @@
+[gd_scene load_steps=48 format=2]
+
+[ext_resource path="res://assets/inherited_scenes/robots/wheel_robot.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/inherited_scenes/robots/mr_cat_pc.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/inherited_scenes/shop/speech_bubble.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/inherited_scenes/robots/cat_helmet.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/inherited_scenes/robots/cloth_pipes.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/inherited_scenes/shop/front_pipes.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/inherited_scenes/shop/floor_front.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/inherited_scenes/shop/store_wall.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/inherited_scenes/shop/table_cloth.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/inherited_scenes/background/gears.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/inherited_scenes/shop/ads.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/inherited_scenes/shop/furniture.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/inherited_scenes/background/background_wall.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/inherited_scenes/shop/tools.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/inherited_scenes/background/floor_background.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/inherited_scenes/shop/tickets.tscn" type="PackedScene" id=16]
+[ext_resource path="res://assets/inherited_scenes/background/background_cylinders.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/inherited_scenes/background/background_pipes_closer.tscn" type="PackedScene" id=18]
+[ext_resource path="res://assets/inherited_scenes/background/background_cube.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/inherited_scenes/shop/props.tscn" type="PackedScene" id=20]
+[ext_resource path="res://assets/inherited_scenes/shop/stoplight.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/inherited_scenes/shop/table.tscn" type="PackedScene" id=22]
+[ext_resource path="res://assets/inherited_scenes/background/background_pipes.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/inherited_scenes/shop/po_box.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/inherited_scenes/shop/ceiling.tscn" type="PackedScene" id=25]
+[ext_resource path="res://assets/inherited_scenes/accesories/cristal.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/inherited_scenes/accesories/weight.tscn" type="PackedScene" id=27]
+[ext_resource path="res://assets/inherited_scenes/accesories/old_robots.tscn" type="PackedScene" id=28]
+[ext_resource path="res://assets/inherited_scenes/accesories/radio_nes.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/inherited_scenes/accesories/old_robots_bottom.tscn" type="PackedScene" id=30]
+[ext_resource path="res://free_camera.gd" type="Script" id=31]
+[ext_resource path="res://assets/inherited_scenes/girl/body.tscn" type="PackedScene" id=32]
+[ext_resource path="res://assets/inherited_scenes/girl/gloves.tscn" type="PackedScene" id=33]
+[ext_resource path="res://assets/inherited_scenes/girl/vest.tscn" type="PackedScene" id=34]
+[ext_resource path="res://assets/inherited_scenes/girl/hat.tscn" type="PackedScene" id=35]
+[ext_resource path="res://assets/inherited_scenes/girl/face.tscn" type="PackedScene" id=36]
+[ext_resource path="res://assets/inherited_scenes/girl/eyes.tscn" type="PackedScene" id=37]
+[ext_resource path="res://assets/inherited_scenes/girl/hair.tscn" type="PackedScene" id=38]
+[ext_resource path="res://assets/inherited_scenes/shop/glass_bottles.tscn" type="PackedScene" id=39]
+[ext_resource path="res://assets/lightmaps/demo_scene.VoxelGI_data.res" type="VoxelGIData" id=40]
+[ext_resource path="res://assets/inherited_scenes/background/smoke.tscn" type="PackedScene" id=41]
+
+[sub_resource type="BoxMesh" id=8]
+size = Vector3(2, 7, 4)
+
+[sub_resource type="CameraEffects" id=6]
+dof_blur_far_enabled = true
+dof_blur_far_distance = 14.94
+dof_blur_far_transition = 18.78
+dof_blur_near_enabled = true
+dof_blur_near_distance = 16.35
+dof_blur_near_transition = 7.44
+dof_blur_amount = 0.05
+
+[sub_resource type="Gradient" id=4]
+colors = PackedColorArray(0, 0, 0.0705882, 1, 0.960938, 0.7678, 0.683167, 1)
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="Sky" id=7]
+
+[sub_resource type="Environment" id=3]
+background_mode = 1
+background_color = Color(0, 0.0117647, 0.0313726, 1)
+sky = SubResource( 7 )
+ambient_light_source = 2
+ambient_light_sky_contribution = 0.0
+reflected_light_source = 2
+tonemap_mode = 2
+tonemap_white = 16.0
+ssao_enabled = true
+glow_enabled = true
+glow_intensity = 0.07
+glow_strength = 0.74
+glow_bloom = 1.0
+glow_blend_mode = 1
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.001
+volumetric_fog_light = Color(1, 1, 1, 1)
+volumetric_fog_light_energy = 0.02
+volumetric_fog_detail_spread = 0.0312503
+adjustment_enabled = true
+adjustment_color_correction = SubResource( 5 )
+
+[node name="DemoScene" type="Node3D"]
+script = null
+
+[node name="Accesories" type="Node3D" parent="."]
+script = null
+
+[node name="Cristal" parent="Accesories" instance=ExtResource( 26 )]
+
+[node name="OldRobots" parent="Accesories" instance=ExtResource( 28 )]
+
+[node name="OldRobotsBottom" parent="Accesories" instance=ExtResource( 30 )]
+
+[node name="RadioNes" parent="Accesories" instance=ExtResource( 29 )]
+
+[node name="Weight" parent="Accesories" instance=ExtResource( 27 )]
+
+[node name="Background" type="Node3D" parent="."]
+script = null
+
+[node name="BackgroundCube" parent="Background" instance=ExtResource( 19 )]
+
+[node name="BackgroundCylinders" parent="Background" instance=ExtResource( 17 )]
+
+[node name="BackgroundPipes" parent="Background" instance=ExtResource( 23 )]
+
+[node name="BackgroundPipesCloser" parent="Background" instance=ExtResource( 18 )]
+
+[node name="BackgroundWall" parent="Background" instance=ExtResource( 13 )]
+
+[node name="FloorBackground" parent="Background" instance=ExtResource( 15 )]
+
+[node name="Gears" parent="Background" instance=ExtResource( 10 )]
+
+[node name="Smoke" parent="Background" instance=ExtResource( 41 )]
+
+[node name="Girl" type="Node3D" parent="."]
+script = null
+
+[node name="Body" parent="Girl" instance=ExtResource( 32 )]
+
+[node name="Eyes" parent="Girl" instance=ExtResource( 37 )]
+
+[node name="Face" parent="Girl" instance=ExtResource( 36 )]
+
+[node name="Gloves" parent="Girl" instance=ExtResource( 33 )]
+
+[node name="Hair" parent="Girl" instance=ExtResource( 38 )]
+
+[node name="Hat" parent="Girl" instance=ExtResource( 35 )]
+
+[node name="Vest" parent="Girl" instance=ExtResource( 34 )]
+
+[node name="Robots" type="Node3D" parent="."]
+script = null
+
+[node name="CatHelmet" parent="Robots" instance=ExtResource( 4 )]
+
+[node name="ClothPipes" parent="Robots" instance=ExtResource( 5 )]
+
+[node name="MrCatPC" parent="Robots" instance=ExtResource( 2 )]
+
+[node name="WheelRobot" parent="Robots" instance=ExtResource( 1 )]
+
+[node name="Shop" type="Node3D" parent="."]
+script = null
+
+[node name="Ads" parent="Shop" instance=ExtResource( 11 )]
+
+[node name="Ceiling" parent="Shop" instance=ExtResource( 25 )]
+
+[node name="FloorFront" parent="Shop" instance=ExtResource( 7 )]
+
+[node name="FrontPipes" parent="Shop" instance=ExtResource( 6 )]
+
+[node name="Furniture" parent="Shop" instance=ExtResource( 12 )]
+
+[node name="GlassBottles" parent="Shop" instance=ExtResource( 39 )]
+
+[node name="POBox" parent="Shop" instance=ExtResource( 24 )]
+
+[node name="Props" parent="Shop" instance=ExtResource( 20 )]
+
+[node name="Stoplight" parent="Shop" instance=ExtResource( 21 )]
+
+[node name="StoreWall" parent="Shop" instance=ExtResource( 8 )]
+
+[node name="Table" parent="Shop" instance=ExtResource( 22 )]
+
+[node name="TableCloth" parent="Shop" instance=ExtResource( 9 )]
+
+[node name="Tickets" parent="Shop" instance=ExtResource( 16 )]
+
+[node name="Tools" parent="Shop" instance=ExtResource( 14 )]
+
+[node name="SpeechBubble" parent="Shop" instance=ExtResource( 3 )]
+
+[node name="Lights" type="Node3D" parent="."]
+script = null
+
+[node name="ConversationLight" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3944, 2.07048, 2.436)
+light_color = Color(0.780392, 0.827451, 0.85098, 1)
+light_energy = 16.42
+light_indirect_energy = 0.4
+light_cull_mask = 4293950495
+shadow_enabled = true
+shadow_bias = 0.068
+shadow_blur = 0.52
+omni_range = 12.0682
+omni_attenuation = 2.63902
+script = null
+
+[node name="BounceEnvironment" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.51698, 3.80847, 5.11354)
+light_color = Color(0.85098, 0.713726, 0.556863, 1)
+light_energy = 1.71
+light_indirect_energy = 0.4
+light_size = 0.93
+light_specular = 0.4
+light_cull_mask = 4293950495
+shadow_enabled = true
+shadow_bias = 0.035
+omni_range = 21.0
+script = null
+
+[node name="ConversationBubbleLight" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(0.51828, -0.452978, 0.725395, 0.154936, 0.883903, 0.441261, -0.84106, -0.116307, 0.528291, -1.83662, 2.2941, 2.57896)
+layers = 1016800
+light_color = Color(0.843137, 0.894118, 1, 1)
+light_energy = 1.06
+light_indirect_energy = 0.4
+light_specular = 0.45
+light_cull_mask = 4294935520
+omni_range = 36.7
+omni_attenuation = 0.812255
+script = null
+
+[node name="BackgroundBlueSpot" type="SpotLight3D" parent="Lights"]
+transform = Transform3D(-4.37114e-08, 0.707107, -0.707107, 0, 0.707107, 0.707107, 1, 3.09086e-08, -3.09086e-08, -62.3755, 45.2467, -5.762)
+light_color = Color(0.341176, 0.666667, 1, 1)
+light_indirect_energy = 0.4
+light_cull_mask = 4293950495
+shadow_enabled = true
+spot_range = 104.8
+spot_attenuation = 0.00704102
+script = null
+
+[node name="AreaRedLight" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(0.0875362, 0.366291, 0.926374, -0.00466079, 0.930084, -0.367318, -0.99615, 0.027836, 0.0831232, 17.0108, 1.03692, -9.47085)
+light_color = Color(1, 0.619608, 0.290196, 1)
+light_energy = 5.86
+light_indirect_energy = 0.3
+light_size = 3.01
+light_cull_mask = 4293950495
+shadow_enabled = true
+omni_range = 40.8
+script = null
+
+[node name="ShackTopLight" type="SpotLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 0.466156, 0.884703, 0, -0.884703, 0.466156, 1.12079, 7.42111, 3.34325)
+light_color = Color(0.85098, 0.713726, 0.556863, 1)
+light_energy = 15.39
+light_indirect_energy = 0.3
+light_cull_mask = 4293950495
+shadow_enabled = true
+shadow_bias = 0.103
+shadow_blur = 2.25
+spot_range = 10.2256
+spot_angle = 56.7
+spot_angle_attenuation = 0.0281641
+script = null
+
+[node name="RimLightGirl" type="SpotLight3D" parent="Lights"]
+transform = Transform3D(-1, -1.24345e-14, -8.74227e-08, 2.54957e-08, 0.956529, -0.291637, 8.36224e-08, -0.291637, -0.956529, 0.869551, 2.62332, -1.72883)
+light_color = Color(0.85098, 0.713726, 0.556863, 1)
+light_indirect_energy = 0.0
+light_specular = 1.0
+light_cull_mask = 4293918722
+shadow_enabled = true
+spot_angle = 77.2
+script = null
+
+[node name="RimLightGirl2" type="SpotLight3D" parent="Lights"]
+transform = Transform3D(-1, 2.66454e-14, -8.74227e-08, -3.35398e-08, 0.923478, 0.383651, 8.0733e-08, 0.383651, -0.923478, 0.708105, 4.34632, -1.66117)
+light_color = Color(0.85098, 0.713726, 0.556863, 1)
+light_indirect_energy = 0.0
+light_specular = 1.0
+light_cull_mask = 4293918722
+shadow_enabled = true
+spot_angle = 77.2
+script = null
+
+[node name="CabinetLight" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 0.466156, 0.884703, 0, -0.884703, 0.466156, -1.72075, 2.93589, -1.17295)
+light_color = Color(0.85098, 0.552941, 0.466667, 1)
+light_energy = 0.46
+light_indirect_energy = 0.1
+shadow_bias = 0.0
+omni_range = 20.0
+omni_attenuation = 0.812252
+script = null
+
+[node name="ScaleLight" type="SpotLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 0.832254, -0.554394, 0, 0.554394, 0.832254, -0.433998, 1.08397, 1.13235)
+layers = 4
+light_energy = 5.1
+light_indirect_energy = 0.32
+light_cull_mask = 4293918724
+spot_attenuation = 0.148651
+spot_angle = 89.5
+script = null
+
+[node name="ScaleLight2" type="SpotLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 0.832254, -0.554394, 0, 0.554394, 0.832254, 0.176575, 1.08397, 1.13235)
+layers = 4
+light_energy = 5.1
+light_indirect_energy = 0.71
+light_cull_mask = 4293918724
+spot_attenuation = 0.148651
+spot_angle = 89.5
+script = null
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6446, 3.38254, -5.60519)
+mesh = SubResource( 8 )
+surface_material_override/0 = null
+script = null
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.822144, 0.101788, 0.560106, 0, 0.983885, -0.178802, -0.569279, 0.147001, 0.808895, 4.58842, 0.802369, 7.7488)
+effects = SubResource( 6 )
+current = true
+fov = 28.0
+script = ExtResource( 31 )
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.98998, 8.28839, -3.45299)
+extents = Vector3(19.3693, 14.9226, 9.70905)
+script = null
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 3 )
+script = null
+
+[node name="VoxelGI" type="VoxelGI" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.92023, 9.77838, -2.67703)
+extents = Vector3(17.7377, 11.187, 10)
+data = ExtResource( 40 )
+script = null

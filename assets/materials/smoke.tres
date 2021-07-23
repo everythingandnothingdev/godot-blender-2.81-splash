@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=2]
+
+[resource]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.34902)
+rim_enabled = true
+rim = 0.0
+rim_tint = 0.0

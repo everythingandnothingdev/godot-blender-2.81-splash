@@ -1,0 +1,38 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+path="res://.godot/imported/tools.glb-ae19630d7a9918fa1daa004be0a181ed.scn"
+
+[deps]
+
+source_file="res://assets/source_scene/shop/tools.glb"
+dest_files=["res://.godot/imported/tools.glb-ae19630d7a9918fa1daa004be0a181ed.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=3
+meshes/lightmap_texel_size=0.1
+skins/use_named_skins=true
+animation/import=true
+animation/fps=15
+import_script/path=""
+_subresources={
+"meshes": {
+"Extended_Tools": {
+"generate/lightmap_uv": 1
+}
+},
+"nodes": {
+"PATH:Tools2": {
+"import/skip_import": true
+}
+}
+}
