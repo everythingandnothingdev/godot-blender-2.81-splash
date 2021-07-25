@@ -2,6 +2,7 @@
 
 importer="2d_array_texture"
 type="StreamTexture2DArray"
+uid="uid://2ro5ycy8tc2w"
 path.s3tc="res://.godot/imported/demo_scene.exr-7a413ccec1da506c5f7347a4477438f5.s3tc.stexarray"
 path.etc2="res://.godot/imported/demo_scene.exr-7a413ccec1da506c5f7347a4477438f5.etc2.stexarray"
 metadata={
